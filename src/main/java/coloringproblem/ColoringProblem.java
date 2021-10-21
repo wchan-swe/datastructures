@@ -4,7 +4,7 @@ public class ColoringProblem {
 
     private int numOfVertices;
     private int numOfColors;
-    private int[] colors;
+    private int[] colors;       // store the colors as chromatic numbers 0,1,2 and so on
     private int[][] adjacencyMatrix;
 
     public ColoringProblem(int numOfColors, int[][] adjacencyMatrix) {
@@ -52,7 +52,7 @@ public class ColoringProblem {
     private boolean isColorValid(int nodeIndex, int colorIndex) {
         for (int i = 0; i < numOfVertices; i++) {
             // there is a connection with neighboring nodes
-            //  adjacen nodes with the same color
+            //  adjacent nodes with the same color
             if (adjacencyMatrix[nodeIndex][i] == 1 && colorIndex == colors[i]) {
                 return false;
             }
