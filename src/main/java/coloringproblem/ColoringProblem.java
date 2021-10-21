@@ -42,6 +42,7 @@ public class ColoringProblem {
                 // backtrack!!!
                 // this means we just increment the color index because we are not able
                 // to assign that colorIndex to the given node
+                // so we set the color by incrementing the colorIndex
 
             }
         }
