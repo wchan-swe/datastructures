@@ -28,6 +28,8 @@ public class ColoringProblem {
             return true;
         }
 
+        // iterate through all the colors and check if we can assign the color to a given node
+        // if we are able to do so, we do and try the next one
         for (int colorIndex = 1; colorIndex <= numOfColors; colorIndex++) {
             // color is valid if we are able to assign that color to that given node
             if (isColorValid(nodeIndex, colorIndex)) {
@@ -53,7 +55,7 @@ public class ColoringProblem {
     private boolean isColorValid(int nodeIndex, int colorIndex) {
         for (int i = 0; i < numOfVertices; i++) {
             // there is a connection with neighboring nodes
-            //  adjacent nodes with the same color
+            //  check for adjacent nodes with the same color
             if (adjacencyMatrix[nodeIndex][i] == 1 && colorIndex == colors[i]) {
                 return false;
             }
