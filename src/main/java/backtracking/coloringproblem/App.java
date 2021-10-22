@@ -1,4 +1,4 @@
-package coloringproblem;
+package backtracking.coloringproblem;
 
 public class App {
 

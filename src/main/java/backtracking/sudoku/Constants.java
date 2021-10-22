@@ -1,4 +1,4 @@
-package sudoku;
+package backtracking.sudoku;
 
 public class Constants {
 

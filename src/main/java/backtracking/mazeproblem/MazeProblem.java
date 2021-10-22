@@ -1,4 +1,4 @@
-package mazeproblem;
+package backtracking.mazeproblem;
 
 public class MazeProblem {
 

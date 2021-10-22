@@ -1,4 +1,4 @@
-package knightstour;
+package backtracking.knightstour;
 
 public class App {
 

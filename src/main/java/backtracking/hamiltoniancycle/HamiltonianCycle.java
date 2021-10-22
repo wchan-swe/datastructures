@@ -1,4 +1,4 @@
-package hamiltoniancycle;
+package backtracking.hamiltoniancycle;
 
 public class HamiltonianCycle {
 
