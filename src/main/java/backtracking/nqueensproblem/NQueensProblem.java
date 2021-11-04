@@ -35,7 +35,7 @@ public class NQueensProblem {
                     return true;
                 }
                 // backtracking
-                // queen is not a good qposition, reset queen backtrack and try next row
+                // queen is not a good position, reset queen backtrack and try next row
                 chessTable[rowIndex][colIndex] = 0;
             }
         }
