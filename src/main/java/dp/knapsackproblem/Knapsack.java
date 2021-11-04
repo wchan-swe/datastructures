@@ -33,6 +33,24 @@ public class Knapsack {
         totalBenefit = knapsackTable[numOfItems][capacityOfKnapsack];
     }
 
+    public int solveRecursion(int m, int[] w, int[] v, int n) {
+
+        // base cases
+        if (m == 0 || n == 0) {
+            return 0;
+        }
+
+        // the given item can not fit into the knapsack
+        if (w[n-1] > m) {
+            return solveRecursion(m, w, v, n-1);
+        } else {
+            // given item can fit into the knapsack so we have
+            int included = v[n-1] + solveRecursion(m-w[n-1], w, v, n-1);
+            int excluded = solveRecursion(m, w, v, n-1);
+            return Math.max(included, excluded);
+        }
+    }
+
     public void showResult() {
         System.out.println("Total benefit: " + totalBenefit);
 
